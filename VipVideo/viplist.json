@@ -1,4 +1,22 @@
 {
+    "platformlist":[
+                    {
+                    "name":"某视频平台1",
+                    "url":"https://v.xx.com/"
+                    },
+                    {
+                    "name":"某视频平台2",
+                    "url":"https://v.xx.com/"
+                    },
+                    {
+                    "name":"某视频平台3",
+                    "url":"https://v.xx.com/"
+                    },
+                    {
+                    "name":"某视频平台4",
+                    "url":"https://v.xx.com/"
+                    }
+                    ],
     "list": [
         {
             "name": "线路9(旋风动漫)",

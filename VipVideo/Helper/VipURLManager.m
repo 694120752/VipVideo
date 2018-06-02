@@ -69,9 +69,10 @@
         [self initVipURLs];
         self.currentIndex = 0;
         
-        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0.1*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
+        dispatch_after(dispatch_time(DISPATCH_TIME_NOW, 0*NSEC_PER_SEC), dispatch_get_main_queue(), ^{
             if (!self.networkLoaded) {
                 [self initDefaultData];
+                [[NSNotificationCenter defaultCenter] postNotificationName:KHLVipVideoRequestSuccess object:nil];
             }
         });
     }
@@ -80,6 +81,9 @@
 
 - (void)initDefaultData{
     NSError *error = nil;
+    
+#error 请先配置 viplist.json 里的平台url。改成常见视频平台即可。例如 http://v.qq.com
+    
     NSString *path = [[NSBundle mainBundle] pathForResource:@"viplist" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:path options:NSDataReadingMappedIfSafe error:&error];
     NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:nil];

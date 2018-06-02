@@ -101,13 +101,7 @@
 }
 
 - (void)configurationDefaultData{
-    
-#warning 这里是个配置接口，请自行配置。
-//    如果启用了VipURLManager.m 里的网络接口，此数据会被覆盖。
-    
-    VipUrlItem *model =  [VipUrlItem createTitle:@"举例视频" url:@"http://vip.iqiyi.com/"];
-    [self.modelsArray addObject:model];
-    
+        
     [self createButtonsForData];
 }
 
