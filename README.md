@@ -9,7 +9,7 @@
 
 ---
 
-## VipVide For iPhone
+## VipVideo For iPhone
 
 [https://github.com/iodefog/VipVideo-iPhone.git](https://github.com/iodefog/VipVideo-iPhone.git)
 
