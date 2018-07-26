@@ -14,9 +14,7 @@
 	* 2018-7-26 更新解析接口
 
 ---
-
-## VipVide For iPhone
-
+## VipVideo For iPhone
 [https://github.com/iodefog/VipVideo-iPhone.git](https://github.com/iodefog/VipVideo-iPhone.git)
 
 ---
