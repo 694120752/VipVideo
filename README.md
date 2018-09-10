@@ -19,6 +19,30 @@
 
 ---
 
+## 解析源（需要代码自行配置）
+
+1.VipURLManager.m
+
+```
+#import "VipURLManager.h"
+#import "AppDelegate.h"
+#import "JSONKit.h"
+
+#warning 这里是否需要线上 vipurl，可直接用本地“mviplist.json”
+
+#define OnlineVipUrl @"https://iodefog.github.io/text/viplist.json"
+
+@implementation VipUrlItem
+
+```
+
+2.线上配置json地址:(也可以使用本地包地址，有时间我就会更新)
+
+[https://iodefog.github.io/text/viplist.json](https://iodefog.github.io/text/viplist.json)
+
+
+---
+
 ## 软件功能介绍：
 * 1.展示窗口
 * 2.新建窗口

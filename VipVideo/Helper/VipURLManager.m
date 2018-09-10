@@ -10,7 +10,8 @@
 #import "AppDelegate.h"
 #import "JSONKit.h"
 
-#warning 这里是个假接口，请自行配置。也可以不处理。 对于viplist.json，最好自行网络收集解析地址补充。
+#warning 这里是否需要线上 vipurl，可直接用本地“viplist.json”
+
 #define HostURL @"http://www.xxx.com"
 
 @implementation VipUrlItem
@@ -82,7 +83,7 @@
 - (void)initDefaultData{
     NSError *error = nil;
     
-#error 请先配置 viplist.json 里的平台url。改成常见视频平台即可。例如 http://v.qq.com
+//#error 请先配置 viplist.json 里的平台url。改成常见视频平台即可。例如 http://v.qq.com
     
     NSString *path = [[NSBundle mainBundle] pathForResource:@"viplist" ofType:@"json"];
     NSData *data = [NSData dataWithContentsOfFile:path options:NSDataReadingMappedIfSafe error:&error];
@@ -94,7 +95,7 @@
 
 - (void)initVipURLs{
     
-    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@/list.json", HostURL]];
+    NSURL *url = [NSURL URLWithString:[NSString stringWithFormat:@"%@", HostURL]];
     NSMutableURLRequest *urlRequest = [[NSMutableURLRequest alloc] initWithURL:url cachePolicy:NSURLRequestUseProtocolCachePolicy timeoutInterval:15];
     [NSURLConnection sendAsynchronousRequest:urlRequest
                                        queue:[NSOperationQueue mainQueue]
