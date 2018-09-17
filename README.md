@@ -86,11 +86,6 @@
 
 * VipURLManager.m 中，设置平台信息及解析url。格式参考viplist.json 文件。也可以直接配置viplist.json，不走网络。
 
-```
-#warning 这里是个假接口，请自行配置。也可以不处理。 对于viplist.json，最好自行网络收集解析地址补充。
-#define HostURL @"http://www.xxx.com"
-
-```
 
 ---
 
