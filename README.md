@@ -15,7 +15,12 @@
 
 ---
 ## VipVideo For iPhone
+
 [https://github.com/iodefog/VipVideo-iPhone.git](https://github.com/iodefog/VipVideo-iPhone.git)
+
+## dmg地址：
+
+https://iodefog.github.io/dmg/MVideo.dmg
 
 ---
 
